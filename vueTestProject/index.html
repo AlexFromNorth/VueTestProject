@@ -7,7 +7,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <div id="app">
+        <ul>
+          <li class="row">
+            <span>ID</span>
+            <span>Имя</span>
+            <span>Фамилия</span>
+            <span>Почта</span>
+            <span>Пол</span>
+            <span>IP - адрес</span>
+          </li>
+          <li class="row" v-for="item in items">
+            <span>{{item.id}}</span>
+            <span>{{item.first_name}}</span>
+            <span>{{item.last_name}}</span>
+            <span>{{item.email}}</span>
+            <span>{{item.gender}}</span>
+            <span>{{item.ip_address}}</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   <script src="js/main.js"></script>
 </html>
