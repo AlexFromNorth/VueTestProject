@@ -1,0 +1,32 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+li,
+a {
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: 60px auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.row:nth-of-type(2n) {
+  background-color: wheat;
+}
+.row > span {
+  width: 14%;
+}
+.row > span:nth-of-type(1) {
+  width: 3%;
+}
+.row > span:nth-of-type(4) {
+  width: 25%;
+}
